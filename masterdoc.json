@@ -14,7 +14,7 @@
                     },
                     {
                     "UnlockDependency": "Questions",
-                    "DependentQuestion": ["./questions/pt/question-01.md", "./questions/pt/question-02.md"],
+                    "DependentQuestions": ["./questions/pt/question-01.md", "./questions/pt/question-02.md"],
                     "UnlockCriteria": "Answered"
                     }
                 ]
@@ -35,7 +35,7 @@
                 "UnlockingRules": [
                     {
                     "UnlockDependency": "QuestionGroup",
-                    "DependentQuestion": ["./questions/pt/pt-metadata.mb"],
+                    "DependentQuestions": ["./questions/pt/pt-metadata.mb"],
                     "UnlockCriteria": "Score",
                     "UnlockPercentageThreshold": "70"
                     }
@@ -47,7 +47,7 @@
                 "UnlockingRules": [
                     {
                     "UnlockDependency": "QuestionGroup",
-                    "DependentQuestion": ["./questions/pt/pt-metadata.mb"],
+                    "DependentQuestions": ["./questions/pt/pt-metadata.mb"],
                     "UnlockCriteria": "Answered"
                     }
                 ]
