@@ -34,7 +34,7 @@
                 "Order": 3,
                 "UnlockingRules": [
                     {
-                    "UnlockDependency": "QuestionGroup",
+                    "UnlockDependency": "GroupedQuestions",
                     "DependentQuestions": ["./questions/pt/pt-metadata.mb"],
                     "UnlockCriteria": "Score",
                     "UnlockPercentageThreshold": "70"
