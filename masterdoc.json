@@ -1,0 +1,57 @@
+[
+    {
+        "Name": "How to Design a Lab Guide",
+        "Language": "English",
+        "Files": [
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-AI/sample-lab-guide/lab/01-introduction.md",
+                "Order": 1,
+                "UnlockingRules": [
+                    {
+                    "UnlockDependency": "Validations",
+                    "DependentValidations": ["01"],
+                    "UnlockCriteria": "Execution"
+                    },
+                    {
+                    "UnlockDependency": "Questions",
+                    "DependentQuestion": ["./questions/pt/question-01.md", "./questions/pt/question-02.md"],
+                    "UnlockCriteria": "Answered"
+                    }
+                ]
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-AI/sample-lab-guide/lab/02-more.md",
+                "Order": 2,
+                "UnlockingRules": [{
+                    "UnlockDependency": "Validations",
+                    "DependentValidations": ["03", "04"],
+                    "UnlockCriteria": "Score",
+                    "UnlockPercentageThreshold": 70
+                }]
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-AI/sample-lab-guide/lab/03-pt-in-labguide.md",
+                "Order": 3,
+                "UnlockingRules": [
+                    {
+                    "UnlockDependency": "QuestionGroup",
+                    "DependentQuestion": ["./questions/pt/pt-metadata.mb"],
+                    "UnlockCriteria": "Score",
+                    "UnlockPercentageThreshold": "70"
+                    }
+                ]
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-AI/sample-lab-guide/lab/04-feedback.md",
+                "Order": 4,
+                "UnlockingRules": [
+                    {
+                    "UnlockDependency": "QuestionGroup",
+                    "DependentQuestion": ["./questions/pt/pt-metadata.mb"],
+                    "UnlockCriteria": "Answered"
+                    }
+                ]
+            }
+        ]
+    }
+]
