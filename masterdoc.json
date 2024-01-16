@@ -47,7 +47,7 @@
                 "UnlockingRules": [
                     {
                     "UnlockDependency": "QuestionGroup",
-                    "DependentQuestions": ["./questions/pt/pt-metadata.mb"],
+                    "DependentQuestions": ["./questions/pt/feedback-metadata.mb"],
                     "UnlockCriteria": "Answered"
                     }
                 ]
